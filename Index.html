@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widli=device-widli, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli&display=swap">
+    
+
+    <!--Css link-->
+    <link rel="stylesheet" href="css/font-css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-css/themify-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/font-css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/font-css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/font-css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-css/bootstrap.min.js" type="text/css">
+
+    <!--Css styles-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/banner.css" rel="stylesheet">
+    <link href="css/category.css" rel="stylesheet">
+
+    <!--js-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+      crossorigin="anonymous"
+    ></script>
+    
+</head>
+<body>
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <div class="main-container">
+        <div id="navbar" class="clear-fix">
+            <!--Header-->
+            <header class="navbar navbar-expand-xl navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-branch" href="#">
+                        <img src="img/Logo.png" height="70px">
+                    </a>
+
+                    <div class="search-bar">
+                        <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                        <input type="text" placeholder="Search">
+                    </div>
+
+                    <div class="nav-bar">
+                        <ul>
+                            <li><a href="#">Category</a>
+                                <ul class="dropdown"> 
+                                    <li><a href="#" class="category_name">Thời trang Nam</a></li>
+                                    <li><a href="#" class="category_name">Thiết bị điện tử</a></li>
+                                    <li><a href="#" class="category_name">Thời trang nữ</a></li>
+                                    <li><a href="#" class="category_name">Nhà của & đời sống</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Welcome @user</a>
+                                <ul class="dropdown">
+                                    <li><a href="#" class="category_name">User Info</a></li>
+                                    <li><a href="#" class="category_name">Order History</a></li>
+                                    <li><a href="#" class="category_name">Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </header>
+
+            <button id="myBtn" title="Back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+            <script>
+                window.onscroll = function() {scrollFunction()};
+                function scrollFunction() {
+                    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+                        document.getElementById("myBtn").style.display = "block";
+                    } else {
+                        document.getElementById("myBtn").style.display = "none";
+                    }
+                }
+                document.getElementById('myBtn').addEventListener("click", function(){
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                });
+            </script>
+
+            <div id="content">
+                <!--Banner-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-interval="10000">
+                                        <img src="img/banner/1.png" class="d-block w-100" alt="..."/>
+                                    </div>
+                                    <div class="carousel-item" data-interval="10000">
+                                        <img src="img/banner/2.png" class="d-block w-100" alt="..."/>
+                                    </div>
+                                    <div class="carousel-item" data-interval="10000">
+                                        <img src="img/banner/3.png" class="d-block w-100" alt="..."/>
+                                    </div>
+                                    <div class="carousel-item" data-interval="10000">
+                                        <img src="img/banner/4.png" class="d-block w-100" alt="..."/>
+                                    </div>
+                                    <div class="carousel-item" data-interval="10000">
+                                        <img src="img/banner/5.png" class="d-block w-100" alt="..."/>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true" style="width: 40px; height: 40px;"></span>
+                                <span class="sr-only">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true" style="width: 40px; height: 40px;"></span>
+                                <span class="sr-only">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="category">
+                    <div class="container" id="category-fix">
+                        <h2 class="category-title">
+                            CATEGORY
+                        </h2>
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <div class="catogory-img">
+                                    <img src="img/category-img/images.jpg" class="category-thumbnail">
+                                </div>
+                                <div class="category-name">
+                                    <h3>Thời trang Nam</h3>
+                                </div> 
+                            </div> 
+                            <div class="col-sm-2">
+                                <div class="catogory-img">
+                                    <img src="img/category-img/images.jpg" class="category-thumbnail">
+                                </div>
+                                <div class="category-name">
+                                    <h3>Thời trang Nam</h3>
+                                </div> 
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="catogory-img">
+                                    <img src="img/category-img/images.jpg" class="category-thumbnail">
+                                </div>
+                                <div class="category-name">
+                                    <h3>Thời trang Nam</h3>
+                                </div> 
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="catogory-img">
+                                    <img src="img/category-img/images.jpg" class="category-thumbnail">
+                                </div>
+                                <div class="category-name">
+                                    <h3>Thời trang Nam</h3>
+                                </div> 
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="catogory-img">
+                                    <img src="img/category-img/images.jpg" class="category-thumbnail">
+                                </div>
+                                <div class="category-name">
+                                    <h3>Thời trang Nam</h3>
+                                </div> 
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="catogory-img">
+                                    <img src="img/category-img/images.jpg" class="category-thumbnail">
+                                </div>
+                                <div class="category-name">
+                                    <h3>Thời trang Nam</h3>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="footer">
+                <div class="container-fluid2 justify-content-center">
+                    <div class="row py-5">
+                        <div class="col">
+                            <div class="card border-0">
+                                <div class="card-body text-center">
+                                    <h2><b>Let's have a chat !</b></h2>
+                                    <p class="pl-0 ml-0 mb-5">Get latest updates and offers.</p>
+                                    <div class="row text-center justify-content-center">
+                                        <div class="col-auto">
+                                          <div class="input-group-lg input-group mb-3 ">
+                                              <input type="text" class="form-control" id="mail" placeholder="Enter your e-mail address" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                              <div class="input-group-append"><button class="btn btn-success" type="button" id="button-addon2"><a href="./pages/contact/contact.html">Submit</a></button></div>              
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mx-0 px-0">
+                    <footer>
+                        <div class="row justify-content-around mb-0 pt-5 pb-0">
+                            <div class=" col-11">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-3 col-12 font-italic align-items-center mt-md-3 mt-4">
+                                        <h5>
+                                          <a href="./index.html"><span><img src="Logo/Logo-hd.png" class="img-fluid mb-1 "></span></a>
+                                          <br>
+                                          <!-- <b class="text-dark"> Key<span class="text-muted"> Pass</span></b> -->
+                                        </h5>
+                                        <p class="social mt-md-3 mt-2"> 
+                                          <a href="https://www.facebook.com/">
+                                            <i class="fa fa-facebook " ></i>
+                                          </a> 
+                                          <a href="https://www.linkedin.com/">
+                                              <i class="fa fa-linkedin "></i>
+                                          </a> 
+                                          <a href="https://www.twitter.com/">
+                                              <i class="fa fa-twitter "></i>
+                                          </a>  
+                                        </p> 
+                                        <small class="copy-rights cursor-pointer">&#9400; 2021 CalendarsTeam <br>T2108M - FPT Aptech</small><br> 
+                                        <small>Copyright.All Rights Resered. </small>
+                                    </div>
+                                    <div class="col-md-3 col-12 my-sm-0 mt-5">
+                                        <ul class="list-unstyled">
+                                            <li class="mt-md-3 mt-4">INFORMATION</li>
+                                            <li><a href="./pages/about/about.html">About Us</a></li>
+                                            <li><a href="./pages/contact/contact.html">Contact Us</a></li>
+                                            <li><a href="./pages/about/about.html">Company</a></li>
+                                            <li><a href="./pages/about/about.html">Our Teams</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 col-12 my-sm-0 mt-5">
+                                        <ul class="list-unstyled">
+                                            <li class="mt-md-3 mt-4">PRODUCTS</li>
+                                            <li><a href="./pages/product/top-calendar/top-calendar.html">Calendars</a></li>
+                                            <li><a href="./pages/product/diaries/diary.html">Diaries</a></li>
+                                            <li><a href="./pages/product/sale.html">Sales</a></li>
+                                            <li><a href="./pages/product/Best-selling.html">Best-selling</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-auto col-md-3 col-12 my-sm-0 mt-5">
+                                        <ul class="list-unstyled">
+                                            <li class="mt-md-3 mt-4">CUSTOMER SERVICE</li>
+                                            <li><a href="#">FAQs</a></li>
+                                            <li><a href="#">Trust and safety</a></li>
+                                            <li><a href="#">Privacy settings</a></li>
+                                            <li><a href="#">Cookie Preferences</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--JavaScript-->
+    <script>
+        $(window).on('load', function () {
+            $(".loader").fadeOut();
+            $("#preloader").delay(200).fadeOut("slow");
+        });
+    </script>
+
+    
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.zoom.min.js"></script>
+    <script src="js/jquery.dd.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
